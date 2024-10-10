@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #4a90e2;
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 36px;
+    font-family: 'Pacifico', cursive;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    margin: 20px;
+}
+
+.sidebar-left,
+.sidebar-right {
+    width: 20%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.sidebar-right h3 {
+    margin-bottom: 15px;
+    color: #4a90e2;
+}
+
+.sidebar-right ul {
+    list-style-type: none;
+}
+
+.sidebar-right li {
+    margin-bottom: 10px;
+}
+
+.sidebar-right a {
+    text-decoration: none;
+    color: #4a90e2;
+}
+
+.sidebar-right a:hover {
+    text-decoration: underline;
+}
+
+.tool-area {
+    width: 60%;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    color: #4a90e2;
+    font-size: 24px;
+}
+
+select {
+    padding: 10px;
+    width: 60%;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 2px solid #ddd;
+    font-size: 16px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin: 10px 0;
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+button:hover {
+    background-color: #357ab7;
+}
+
+#font-output {
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: left;
+}
+
+#font-output p {
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    user-select: text;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer ul li {
+    display: inline;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .sidebar-left,
+    .sidebar-right {
+        width: 25%;
+    }
+    .tool-area {
+        width: 50%;
+    }
+}
+
+@media (max-width: 992px) {
+    main {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .sidebar-left,
+    .sidebar-right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .tool-area {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px; /* Reduce header size on smaller screens */
+    }
+
+    select {
+        width: 90%; /* Make select box wider on mobile */
+    }
+
+    button {
+        width: 100%; /* Full width buttons on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 20px; /* Smaller heading size for very small screens */
+    }
+
+    button {
+        padding: 8px 16px; /* Smaller padding for buttons */
+    }
+
+    textarea {
+        height: 80px; /* Smaller textarea on small screens */
+    }
+
+    #font-output {
+        font-size: 20px; /* Smaller font size for output */
+    }
+}
