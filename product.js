@@ -4,7 +4,7 @@ const products = [
       id: 1,
       name: 'Diwali Invitation',
       description: '• Festive design to invite loved ones.<br>• Customize with your details.',
-      image: 'tool1.svg',
+      image: 'tool1.jpg',
       link: '#'
   },
   {
