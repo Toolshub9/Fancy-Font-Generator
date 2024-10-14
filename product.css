@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    cursor: none; /* Hide the default cursor */
+    /* Removed 'cursor: none;' to enable the default cursor */
 }
 
 /* Watermark */
@@ -106,20 +106,7 @@ h1 {
     transform: translateY(-5px);
 }
 
-/* Custom cursor styling */
-#custom-cursor {
-    position: fixed;
-    top: 0;
-    left: 0;
-    font-size: 20px;
-    color: rgb(255, 0, 0); /* Semi-transparent red */
-    font-family: Arial, sans-serif;
-    pointer-events: none; /* Allows interaction with elements under the cursor */
-    z-index: 1000;
-    transform: translate(-50%, -50%);
-    transition: transform 0.1s ease-out;
-}
-
+/* Removed custom cursor styling */
 /* Responsive Design */
 @media (max-width: 1200px) {
     .product-card {
