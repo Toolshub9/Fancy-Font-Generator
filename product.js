@@ -12,7 +12,7 @@ const products = [
       name: 'Calculator',
       description: '• Basic calculations made easy.<br>• Perfect for daily use.',
       image: 'tool2.jpg',
-      link: '#'
+      link: 'calculator.html'
   },
   {
       id: 3,
