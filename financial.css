@@ -1,0 +1,100 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Calculator container */
+.calculator {
+    background-color: #e0e0e0; /* Light grey background */
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 90vw; /* Use viewport width */
+    max-width: 400px; /* Max width */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Brand name styling */
+.brand-name {
+    font-size: 1.4em; /* Increased size */
+    margin-bottom: 10px;
+    color: #4CAF50; /* Brand color */
+}
+
+.brand-name a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+.brand-name a:hover {
+    text-decoration: underline;
+}
+
+/* Input group styling */
+.input-group {
+    margin-bottom: 15px;
+}
+
+input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #f39c12, #f1c40f); /* Orange gradient */
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(145deg, #f1c40f, #f39c12);
+    transform: translateY(-3px);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Result styling */
+#result {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .brand-name {
+        font-size: 1.2em; /* Adjusted for small screens */
+    }
+
+    button {
+        font-size: 1em; /* Adjusted for small screens */
+    }
+
+    input[type="number"], select {
+        font-size: 0.9em; /* Adjusted for small screens */
+    }
+}
