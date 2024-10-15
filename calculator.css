@@ -1,0 +1,115 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Calculator container */
+.calculator {
+    background-color: #e0e0e0; /* Light grey background */
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* For 3D effect */
+}
+
+/* Brand name styling */
+.brand-name {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #4CAF50; /* Brand color */
+}
+
+.brand-name a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+.brand-name a:hover {
+    text-decoration: underline;
+}
+
+/* Display input */
+#display {
+    width: 100%;
+    height: 60px;
+    text-align: right;
+    padding: 10px;
+    font-size: 2em;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff; /* White display */
+    color: #333;
+    margin-bottom: 15px;
+    box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.2); /* Inner shadow */
+}
+
+/* Button grid layout */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Button styling */
+button {
+    padding: 20px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.2), 
+                 -5px -5px 10px rgba(255, 255, 255, 0.8); /* 3D effect */
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.2s;
+}
+
+/* Operator button style */
+.operator {
+    background: linear-gradient(145deg, #f39c12, #f1c40f); /* Orange gradient */
+}
+
+/* Equals button style */
+.equals {
+    background: linear-gradient(145deg, #e74c3c, #c0392b); /* Red gradient */
+    grid-column: span 2; /* Span two columns */
+}
+
+/* Button hover effects */
+button:hover {
+    box-shadow:  3px 3px 8px rgba(0, 0, 0, 0.3), 
+                 -3px -3px 8px rgba(255, 255, 255, 0.9); /* Slightly more prominent */
+}
+
+button:active {
+    transform: scale(0.95); /* Shrink effect when pressed */
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .calculator {
+        width: 300px;
+    }
+
+    #display {
+        font-size: 1.5em;
+    }
+
+    button {
+        padding: 15px;
+        font-size: 1.3em;
+    }
+}
