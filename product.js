@@ -19,7 +19,7 @@ const products = [
       name: 'Financial Calculator',
       description: '• Calculate loan payments, interest rates, and investment returns.<br>• User-friendly interface for quick financial analysis.',
       image: 'tool3.jpg',
-      link: '#'
+      link: 'financial.html'
   },
   {
       id: 4,
