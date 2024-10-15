@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Scientific Calculator</title>
+    <link rel="stylesheet" href="scientific.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1 class="brand-name">
+            <a href="https://toolshub9.github.io/Fancy-Font-Generator/" target="_blank">I ❤️ Sujit</a>
+        </h1>
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button onclick="clearDisplay()" class="operator">C</button>
+            <button onclick="deleteLast()" class="operator">←</button>
+            <button onclick="inputValue('/')">÷</button>
+            <button onclick="inputValue('*')">×</button>
+            <button onclick="inputValue('sin(')">sin</button>
+            <button onclick="inputValue('cos(')">cos</button>
+            <button onclick="inputValue('tan(')">tan</button>
+            <button onclick="inputValue('sqrt(')">√</button>
+            <button onclick="inputValue('7')">7</button>
+            <button onclick="inputValue('8')">8</button>
+            <button onclick="inputValue('9')">9</button>
+            <button onclick="inputValue('-')">-</button>
+            <button onclick="inputValue('4')">4</button>
+            <button onclick="inputValue('5')">5</button>
+            <button onclick="inputValue('6')">6</button>
+            <button onclick="inputValue('+')">+</button>
+            <button onclick="inputValue('1')">1</button>
+            <button onclick="inputValue('2')">2</button>
+            <button onclick="inputValue('3')">3</button>
+            <button onclick="calculateResult()" class="equals">=</button>
+            <button onclick="inputValue('0')" class="zero">0</button>
+            <button onclick="inputValue('.')">.</button>
+            <button onclick="inputValue('log(')">log</button>
+            <button onclick="inputValue(')')">)</button>
+        </div>
+    </div>
+    <audio id="buttonSound" src="button-press.mp3" preload="auto"></audio> <!-- Sound file -->
+    <script src="scientific.js"></script>
+</body>
+</html>
