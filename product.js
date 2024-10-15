@@ -26,7 +26,7 @@ const products = [
       name: 'Scientific Calculator',
       description: '• Essential functions for trigonometry, logarithms, and statistics.<br>• User-friendly design with a large display for accurate calculations.',
       image: 'tool4.jpg',
-      link: '#'
+      link: 'scientific.html'
   },
 ];
 
